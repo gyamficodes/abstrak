@@ -17,6 +17,7 @@ module.exports = {
         'abstrak-gray':'#99a1aa',
         'abstrak-banner':'rgba(41, 41, 48, 0.8)',
         'moon': '#5956e9',
+        'abtrack-dient':'#2F2F35'
       },
       animation:{
         'back-in-up': 'backInUp 1s 1'
