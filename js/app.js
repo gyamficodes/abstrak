@@ -1,3 +1,4 @@
+// NavBar code
 const scrollNav = document.querySelector('#navbar');
 function handleScroll(){
     const scrollPosition = window.scrollY;
@@ -22,3 +23,21 @@ function handleScroll(){
 }
 
 window.addEventListener('scroll', handleScroll)
+// NavBar code
+
+//scrowTop code
+const scrollUp = document.querySelector('#pageTop')
+
+function handleScrollUp() {
+    const toTop = window.scrollY;
+    const scroll = toTop.toFixed(0)
+    
+     window.scrollTo({
+        top:0 ,
+        behavior: "smooth"
+     })
+}
+
+scrollUp.addEventListener('click',handleScrollUp)
+
+//scrowTop codtoTe
