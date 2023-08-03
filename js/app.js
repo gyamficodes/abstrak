@@ -41,3 +41,21 @@ function handleScrollUp() {
 scrollUp.addEventListener('click',handleScrollUp)
 
 //scrowTop codtoTe
+
+// hide and 
+
+const iconBox = document.querySelector('#iBox')
+const iconList = document.querySelectorAll('#icons')
+
+
+function showMenu() {
+    for(const element of iconList){
+        if(element.classList.contains('hidden')){
+            element.classList.remove('hidden')
+        }else{
+            element.classList.add('hidden')
+        }
+        }
+}
+
+iconBox.addEventListener('click', showMenu)
