@@ -44,18 +44,22 @@ scrollUp.addEventListener('click',handleScrollUp)
 
 // hide and 
 
-const iconBox = document.querySelector('#iBox')
-const iconList = document.querySelectorAll('#icons')
+const closeMenu = document.querySelector('#close')
+const showMenu = document.querySelector('#show')
+const mobileMenu = document.querySelector('#mobile')
 
 
-function showMenu() {
-    for(const element of iconList){
-        if(element.classList.contains('hidden')){
-            element.classList.remove('hidden')
-        }else{
-            element.classList.add('hidden')
-        }
-        }
+function handleShowMenu() {
+    mobileMenu.classList.remove('-translate-x-[100%]')
+    mobileMenu.classList.add('translate-x-[100%]')
 }
 
-iconBox.addEventListener('click', showMenu)
+function hideMenu() {
+    mobileMenu.classList.add('-translate-x-[100%]')
+    mobileMenu.classList.remove('translate-x-[100%]')
+
+}
+
+closeMenu.addEventListener('click', hideMenu)
+
+showMenu.addEventListener('click', handleShowMenu)
