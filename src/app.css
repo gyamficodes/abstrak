@@ -1,3 +1,177 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+   
+    .nav-links{
+        @apply text-[#ecf2f6] text-[18px] capitalize relative z-[1] before:content-['']  before:left-0 before:right-0 before:bottom-0 before:absolute before:z-[-1] before:w-[0%] hover:before:w-full before:h-[3px]  before:bg-white before:translate-y-[5px] before:transition-all duration-[800ms]  ease-in-out;
+    }
+
+    .form-flex{
+        @apply flex  gap-[0.5em] flex-col mb-6
+    }
+    .form-text{
+        @apply text-black text-[16px] capitalize
+    }
+    .input-text{
+        @apply border-solid border-[2px] h-[60px] rounded-xl pl-4 placeholder:font-medium outline-none hover:outline-none focus:shadow-slate-200 focus:shadow-lg focus:border-none transition-all duration-[800ms];
+    }
+
+    .mobile-links-styles{
+        @apply h-[70px] border-b-2 border-t-slate-300
+    }
+
+    .mobile-links-style{
+        @apply text-abstrak-PaleBlue h-[100%] flex items-center  capitalize text-[18px] font-semibold cursor-pointer;
+    }
+    
+   .testi-style{
+    @apply text-[14px] sm:text-[17px]  md:text-[19px] 2xl:text-[20px] mt-6 font-[700];
+   }
+   
+   .testi-card-style{
+    @apply h-[280px] 2xl:h-[400px] w-[100%]  px-2  2xl:px-10 py-8;
+   }
+
+   .service-bg{
+    @apply bg-white   h-[auto] sm:px-[40px]  pt-[100px] pb-[140px] px-[20px] md:px-[70px] 2xl:pt-[40px];
+
+   }
+    
+   .project-card-style{
+    @apply text-[20px] mb-[8px] sm:text-[29px] md:text-[24px] lg:text-[33px] 2xl:text-[38px] xl:text-[35px] text-abstrak-black font-[500] cursor-pointer hover:text-abstrak-blue transition-all duration-200 ease-in-out;
+   }
+   .project-text-style{
+    @apply group-hover:scale-[1.2] transition-all duration-1000 ease-in-out w-[100%] h-[76%] object-cover  bg-[url(/images/project/project-6.png)]
+   }
+   .project-text-style2{
+    @apply group-hover:scale-[1.2] transition-all duration-1000 ease-in-out w-[100%] h-[76%] object-cover  bg-[url(/images/project/project-5.png)]
+   }
+
+   .project-text-style3{
+    @apply group-hover:scale-[1.2] transition-all duration-1000 ease-in-out w-[100%] h-[76%] object-cover  bg-[url(/images/project/project-4.png)]
+   }
+
+   .project-text-style4{
+    @apply group-hover:scale-[1.2] transition-all duration-1000 ease-in-out w-[100%] h-[76%] object-cover  bg-[url(/images/project/project-3.png)] 
+   }
+   .project-text-style5{
+    @apply group-hover:scale-[1.2] transition-all duration-1000 ease-in-out w-[100%] h-[76%] object-cover  bg-[url(/images/project/project-2.png)]
+   }
+   .project-text-style6{
+    @apply group-hover:scale-[1.2] transition-all duration-1000 ease-in-out w-[100%] h-[76%] object-cover  bg-[url(/images/project/project-1.png)]
+   }
+
+   .project-card{
+    @apply h-[34%] bg-white relative px-10 py-7;
+   }
+   .project-bg{
+    @apply w-[90%] h-[600px]  rounded-[50px] overflow-hidden
+   }
+
+
+   .blog-card-img-tyle{
+    @apply group-hover:scale-[1.08] transition-all duration-700;
+   }
+
+   .blog-card-img-box{
+    @apply w-[100%] rounded-l-xl h-[300px]  2xl:h-[100%] overflow-hidden;
+   }
+
+   .blog-flex{
+    @apply flex items-center  gap-3 mt-3
+   }
+
+   .blog-t{
+    @apply text-[20px] capitalize
+   }
+
+   .blog-m-t{
+    @apply text-abstrak-gray text-[16px] 2xl:text-[20px]
+   }
+    
+   .expertise-style{
+    @apply h-[250px] 2xl:h-[350px] w-[100%] 2xl:w-[70%]  hover:bg-abtrack-dient rounded-xl  text-center px-4 py-20 transition-all duration-75
+   }
+
+   .expertise-grid{
+    @apply flex items-center justify-center flex-col
+   }
+
+   .expertise-text{
+    @apply text-[34px] 2xl:text-[80px] text-abstrak-blue font-[700]
+   }
+
+   .expertise{
+    @apply text-white text-[18px] 2xl:text-[20px] leading-[1] font-bold;
+   }
+
+  .banner-content-section{
+    @apply flex flex-wrap gap-[3em] xl:flex-nowrap xl:flex xl:items-center xl:justify-between  2xl:flex-nowrap 2xl:items-center 2xl:justify-between 
+  }
+  
+  .banner-text{
+    @apply text-[40px] mt-[70px] sm:text-[50px] sm:font-[700] xl:w-[80%]  2xl:text-[75px] leading-[1.15] 2xl:w-[60%] font-[800] text-white
+  }
+  
+   .banner-mani-form-box{
+    @apply w-[100%] xl:translate-y-[200px] xl:w-[33%] 2xl:w-[30%] 2xl:mt-[100px] h-[650px] 2xl:translate-y-[130px] py-[30px] px-14 rounded-[40px] bg-white shadow-lg shadow-slate-300
+   }
+
+  .banner-btn{
+    @apply text-[20px] group-hover:text-white transition-all duration-500
+  }
+   .top-section{
+    @apply  h-[100%]  px-[20px] pb-[50px] pt-[20px] sm:px-[40px] md:px-[70px] 2xl:pt-[40px]   bg-[url('/images/banner/banner-bg-1.png')] bg-no-repeat bg-cover bg-center relative z-[1] before:content-[''] before:left-0 before:top-0 before:right-0 before:bottom-0 before:bg-abstrak-banner  before:h-[100%] 2xl:before:h-[100%] before:w-full before:absolute before:z-[-1] before:opacity-[0.95]
+   }
+
+
+   .contact-text{
+    @apply  text-white text-[18px] sm:text-[20px] md:text-[25px] 2xl:text-[30px] font-[500] flex items-center gap-1;
+   }
+   .contact-icons-style{
+    @apply  mt-1 text-[14px] md:text-[20px];
+   }
+   .contact-main-text{
+    @apply text-[18px] 2xl:text-[20px] text-abstrak-gray lg:text-[25px] font-[500];
+   }
+     .contact-card{
+        @apply border-solid border-[2px] h-[70px] rounded-xl pl-4 placeholder:font-medium outline-none hover:outline-none focus:shadow-slate-200 focus:shadow-lg focus:border-none transition-all duration-200;
+     }
+
+     .contact-t{
+        @apply text-black text-[16px] capitalize;
+     }
+
+     .contact-flex{
+        @apply flex items-center gap-5 lg:flex-nowrap lg:justify-between 2xl:justify-between flex-wrap;
+     }
+
+     .footer-head-text{
+        @apply text-[20px] md:text-[25px] text-abstrak-black font-[800]
+     }
+ 
+   .footer-text{
+    @apply   text-abstrak-black   md:text-[20px]  lg:text-[17px] font-[500] xl:text-[20px] mb-[10px] hover:text-abstrak-blue transition-all duration-300 cursor-pointer;
+   }
+
+   .footer-nav-text{
+    @apply text-abstrak-gray text-[20px] font-[500] cursor-pointer hover:text-abstrak-blue transition-all duration-100;
+   }
+
+   .footer-icons{
+    @apply  h-[23px] sm:h-[35px]  cursor-pointer
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
