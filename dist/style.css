@@ -909,6 +909,22 @@ video {
   border-radius: 50px;
 }
 
+.text-flex {
+  position: fixed;
+  top: 26%;
+  z-index: 100;
+  display: flex;
+  height: 65px;
+  width: 60px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(89 86 233 / var(--tw-bg-opacity));
+}
+
 .blog-card-img-tyle {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

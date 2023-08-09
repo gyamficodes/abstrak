@@ -71,6 +71,10 @@
    }
 
 
+    .text-flex{
+      @apply w-[60px] h-[65px] bg-moon rounded-r-full cursor-pointer flex items-center justify-center fixed top-[26%] z-[100];
+    }
+
    .blog-card-img-tyle{
     @apply group-hover:scale-[1.08] transition-all duration-700;
    }
