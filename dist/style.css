@@ -1398,10 +1398,6 @@ video {
   top: 0px;
 }
 
-.top-\[26\%\] {
-  top: 26%;
-}
-
 .z-\[100\] {
   z-index: 100;
 }
@@ -1557,10 +1553,6 @@ video {
 
 .h-\[60px\] {
   height: 60px;
-}
-
-.h-\[65px\] {
-  height: 65px;
 }
 
 .h-\[65vh\] {
@@ -1726,11 +1718,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-r-full {
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
 }
 
 .border {
