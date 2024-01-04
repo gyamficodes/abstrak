@@ -8,8 +8,6 @@
         @apply text-[#ecf2f6] text-[18px] capitalize relative z-[1] before:content-['']  before:left-0 before:right-0 before:bottom-0 before:absolute before:z-[-1] before:w-[0%] hover:before:w-full before:h-[3px]  before:bg-white before:translate-y-[5px] before:transition-all duration-[800ms]  ease-in-out;
     }
 
-    
-
     .form-flex{
         @apply flex  gap-[0.5em] flex-col mb-6
     }
